@@ -2,7 +2,7 @@
 
 A streetwear-collective landing page — near-black + acid-lime, neo-brutalist product cards, glassmorphism photo bento, and a signature kinetic motion-echo hero.
 
-**Live:** _added after first deploy_
+**Live:** https://brutal-motion.vercel.app
 
 ## The build
 
