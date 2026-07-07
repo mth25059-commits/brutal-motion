@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BRUTAL_MOTION — Streetwear Collective</title>
+<meta name="description" content="BRUTAL_MOTION — a streetwear collective. Heavyweight cut, built to move. Drop 001: underpass to garage, graphite to acid." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-drop="2026-07-24T20:00:00">
+
+<!-- ============ SKIP + DROP BANNER MARQUEE ============ -->
+<a class="skip" href="#hero">Skip to content</a>
+
+<div class="banner" aria-label="Drop announcement">
+  <div class="banner__row" aria-hidden="true">
+    <span>DROP 001 — <b>BRUTAL_MOTION</b></span><i>✦</i>
+    <span>FREE SHIPPING OVER $200</span><i>✦</i>
+    <span>MEMBERS GET FIRST ACCESS</span><i>✦</i>
+    <span>DROP 001 — <b>BRUTAL_MOTION</b></span><i>✦</i>
+    <span>FREE SHIPPING OVER $200</span><i>✦</i>
+    <span>MEMBERS GET FIRST ACCESS</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ TOP BAR / 3D LOGO ============ -->
+<header class="bar" id="bar">
+  <a class="logo" href="#top" aria-label="BRUTAL_MOTION home" data-tilt>
+    <span class="logo__cube" aria-hidden="true">
+      <span class="logo__face logo__face--front">BM</span>
+      <span class="logo__face logo__face--top">BM</span>
+      <span class="logo__face logo__face--side">BM</span>
+    </span>
+    <span class="logo__word">BRUTAL<i>_</i>MOTION</span>
+  </a>
+  <nav class="bar__nav" aria-label="Primary">
+    <a href="#drop">Drop</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#story">Collective</a>
+  </nav>
+  <button class="bar__cart" id="cartBtn" aria-label="Open cart" aria-haspopup="dialog">
+    Cart<span class="bar__count" id="cartCount" data-empty="true">0</span>
+  </button>
+</header>
+
+<!-- ============ HERO — SCRUB + KINETIC TYPE ============ -->
+<section class="hero" id="hero">
+  <a id="top"></a>
+  <div class="hero__sticky">
+    <div class="hero__stage" id="heroStage" data-fallback="true">
+      <video class="hero__video" id="heroVideo" muted loop autoplay playsinline preload="auto" poster="assets/poster-acid.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__scan" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__lock" id="heroLock">
+      <p class="hero__eyebrow">Streetwear collective — est. off the grid</p>
+      <h1 class="hero__title" aria-label="BRUTAL MOTION">
+        <span class="kin">
+          <span class="kin__echo" aria-hidden="true">BRUTAL</span>
+          <span class="kin__echo" aria-hidden="true">BRUTAL</span>
+          <span class="kin__lead">BRUTAL</span>
+        </span>
+        <span class="kin kin--acid">
+          <span class="kin__echo" aria-hidden="true">MOTION</span>
+          <span class="kin__echo" aria-hidden="true">MOTION</span>
+          <span class="kin__lead">MOTION</span>
+        </span>
+      </h1>
+      <div class="hero__cta">
+        <a class="btn btn--acid" href="#drop">Shop Drop 001</a>
+        <a class="btn btn--ghost" href="#lookbook">Watch the walk</a>
+      </div>
+    </div>
+
+    <!-- STEPS 1–3 · liquid-glass narrative beats that slide in as he walks -->
+    <div class="hero__steps" aria-hidden="true">
+      <article class="gpanel" data-panel="1">
+        <span class="gpanel__num">Step 01</span>
+        <h2 class="gpanel__title">Built heavy</h2>
+        <p class="gpanel__body">680gsm loopback that holds its shape from the night shift to the last train.</p>
+      </article>
+      <article class="gpanel" data-panel="2">
+        <span class="gpanel__num">Step 02</span>
+        <h2 class="gpanel__title">Cut clean</h2>
+        <p class="gpanel__body">Boxed shoulder, tapered break. Deliberate lines and not one wasted seam.</p>
+      </article>
+      <article class="gpanel gpanel--cta" data-panel="3">
+        <span class="gpanel__num">Step 03</span>
+        <h2 class="gpanel__title">Moves with you</h2>
+        <p class="gpanel__body">From the underpass to the platform — this is how Drop 001 wears in motion.</p>
+      </article>
+    </div>
+
+    <!-- 4-step progress rail -->
+    <div class="hero__rail" id="heroRail" aria-hidden="true">
+      <i data-tick="0"></i><i data-tick="1"></i><i data-tick="2"></i><i data-tick="3"></i>
+    </div>
+
+    <div class="hero__foot">
+      <div class="hero__cue" id="heroCue" aria-hidden="true"><span>Scroll — step in</span><i></i></div>
+      <div class="clock" id="clock" role="timer" aria-live="off">
+        <span class="clock__label">Drops in</span>
+        <span class="clock__units">
+          <b id="cDD">00</b><s>d</s><b id="cHH">00</b><s>h</s><b id="cMM">00</b><s>m</s><b id="cSS">00</b><s>s</s>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="hero__track" aria-hidden="true"></div>
+</section>
+
+<!-- ============ BENTO — GLASS PHOTO GRID ============ -->
+<section class="bento" id="bento">
+  <div class="sechead">
+    <p class="eyebrow">Drop 001 — the index</p>
+    <h2 class="sechead__title" data-reveal>Cut to move.</h2>
+  </div>
+
+  <div class="bento__grid">
+    <!-- big photo tile w/ glass caption -->
+    <article class="tile tile--tall" data-tilt data-reveal style="--img:url('assets/look-tee-cargo.jpg')">
+      <div class="tile__img" role="img" aria-label="Model in graphite tee and forest cargo pant"></div>
+      <div class="glass tile__cap">
+        <p class="glass__k">Full fit</p>
+        <p class="glass__v">Graphite tee<br>Forest cargo</p>
+      </div>
+      <span class="tile__tag">01</span>
+    </article>
+
+    <!-- acid hoodie tile -->
+    <article class="tile tile--acidimg" data-tilt data-reveal style="--img:url('assets/hoodie-acid.jpg')">
+      <div class="tile__img" role="img" aria-label="Boxy black hoodie on acid background"></div>
+      <div class="glass tile__cap tile__cap--sm">
+        <p class="glass__k">The hoodie</p>
+        <p class="glass__v">Void black · boxy</p>
+      </div>
+    </article>
+
+    <!-- stat / feature brutalist card -->
+    <article class="tile tile--stat" data-reveal>
+      <p class="tile__big">680<sup>gsm</sup></p>
+      <p class="tile__note">Loopback fleece. Stands on its own. Weightless once it's on.</p>
+    </article>
+
+    <!-- rotation video tile -->
+    <article class="tile tile--vid" data-tilt data-reveal>
+      <div class="tile__media" data-fallback="true">
+        <video class="tile__video" muted loop playsinline preload="none" poster="assets/hoodie-acid.jpg">
+          <source src="assets/rotation.mp4" type="video/mp4" />
+        </video>
+        <div class="tile__spin" aria-hidden="true"></div>
+      </div>
+      <div class="glass tile__cap tile__cap--sm">
+        <p class="glass__k">360°</p>
+        <p class="glass__v">Every seam</p>
+      </div>
+    </article>
+
+    <!-- manifesto strip -->
+    <article class="tile tile--say" data-reveal>
+      <p class="tile__say">No restocks. No logos screaming. The fit does the talking.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="strip" aria-hidden="true">
+  <div class="strip__row">
+    <span>BUILT HEAVY</span><i>/</i><span>CUT CLEAN</span><i>/</i><span>MOVES WITH YOU</span><i>/</i>
+    <span>BUILT HEAVY</span><i>/</i><span>CUT CLEAN</span><i>/</i><span>MOVES WITH YOU</span><i>/</i>
+    <span>BUILT HEAVY</span><i>/</i><span>CUT CLEAN</span><i>/</i><span>MOVES WITH YOU</span><i>/</i>
+  </div>
+</div>
+
+<!-- ============ LATEST DROP — PRODUCTS ============ -->
+<section class="drop" id="drop">
+  <div class="sechead">
+    <p class="eyebrow">Three pieces · one system</p>
+    <h2 class="sechead__title" data-reveal>Latest drop.</h2>
+  </div>
+
+  <div class="prods">
+    <!-- P1 -->
+    <article class="prod" data-id="tee" data-name="Collective Tee" data-price="85" data-reveal data-tilt>
+      <div class="prod__media" style="--img:url('assets/look-tee-cargo.jpg')">
+        <div class="prod__img prod__img--top" role="img" aria-label="Collective tee, graphite wash"></div>
+        <span class="prod__flag">In stock</span>
+      </div>
+      <div class="prod__body">
+        <div class="prod__row"><h3 class="prod__name">Collective Tee</h3><span class="prod__price">$85</span></div>
+        <p class="prod__spec">240gsm · boxed shoulder · graphite wash</p>
+        <fieldset class="sizes" aria-label="Choose a size for Collective Tee">
+          <label class="size"><input type="radio" name="s-tee" value="S"><span>S</span></label>
+          <label class="size"><input type="radio" name="s-tee" value="M"><span>M</span></label>
+          <label class="size"><input type="radio" name="s-tee" value="L"><span>L</span></label>
+          <label class="size"><input type="radio" name="s-tee" value="XL"><span>XL</span></label>
+        </fieldset>
+        <button class="add" data-add>Add to cart</button>
+      </div>
+    </article>
+
+    <!-- P2 -->
+    <article class="prod prod--feat" data-id="cargo" data-name="Motion Cargo" data-price="160" data-reveal data-tilt>
+      <div class="prod__media" data-fallback="true">
+        <video class="prod__video" muted loop playsinline preload="none" poster="assets/look-tee-cargo.jpg">
+          <source src="assets/rotation.mp4" type="video/mp4" />
+        </video>
+        <div class="prod__img prod__img--full" role="img" aria-label="Motion cargo, forest ripstop" style="--img:url('assets/look-tee-cargo.jpg')"></div>
+        <span class="prod__flag prod__flag--hot">Hover to spin</span>
+      </div>
+      <div class="prod__body">
+        <div class="prod__row"><h3 class="prod__name">Motion Cargo</h3><span class="prod__price">$160</span></div>
+        <p class="prod__spec">Ripstop · anchored bellows · tapered break</p>
+        <fieldset class="sizes" aria-label="Choose a size for Motion Cargo">
+          <label class="size"><input type="radio" name="s-cargo" value="30"><span>30</span></label>
+          <label class="size"><input type="radio" name="s-cargo" value="32"><span>32</span></label>
+          <label class="size"><input type="radio" name="s-cargo" value="34"><span>34</span></label>
+          <label class="size size--out"><input type="radio" name="s-cargo" value="36" disabled><span>36</span></label>
+        </fieldset>
+        <button class="add" data-add>Add to cart</button>
+      </div>
+    </article>
+
+    <!-- P3 -->
+    <article class="prod" data-id="hoodie" data-name="Void Hoodie" data-price="190" data-reveal data-tilt>
+      <div class="prod__media prod__media--acid" style="--img:url('assets/hoodie-acid.jpg')">
+        <div class="prod__img prod__img--full" role="img" aria-label="Void hoodie on acid background"></div>
+        <span class="prod__flag">Low stock</span>
+      </div>
+      <div class="prod__body">
+        <div class="prod__row"><h3 class="prod__name">Void Hoodie</h3><span class="prod__price">$190</span></div>
+        <p class="prod__spec">680gsm loopback · boxy · double-lined hood</p>
+        <fieldset class="sizes" aria-label="Choose a size for Void Hoodie">
+          <label class="size"><input type="radio" name="s-hoodie" value="S"><span>S</span></label>
+          <label class="size size--out"><input type="radio" name="s-hoodie" value="M" disabled><span>M</span></label>
+          <label class="size"><input type="radio" name="s-hoodie" value="L"><span>L</span></label>
+          <label class="size"><input type="radio" name="s-hoodie" value="XL"><span>XL</span></label>
+        </fieldset>
+        <button class="add" data-add>Add to cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ EDITORIAL LOOKBOOK — FULL BLEED ============ -->
+<section class="look" id="lookbook">
+  <div class="look__media" data-fallback="true">
+    <video class="look__video" muted loop playsinline preload="none" poster="assets/poster-acid.jpg">
+      <source src="assets/lookbook.mp4" type="video/mp4" />
+    </video>
+    <div class="look__shade" aria-hidden="true"></div>
+  </div>
+  <div class="look__copy">
+    <p class="eyebrow eyebrow--light">Lookbook · shot on location</p>
+    <h2 class="look__head" data-reveal>From the<br><em>underpass</em><br>to the garage.</h2>
+    <p class="look__lead">One fit, two floors of concrete, zero retouching on the walk. This is how it moves before it ever hits a rail.</p>
+    <a class="btn btn--acid" href="#drop">Get the fit</a>
+  </div>
+</section>
+
+<!-- ============ BRAND STORY — BRUTALIST BLOCKS ============ -->
+<section class="story" id="story">
+  <div class="story__grid">
+    <div class="story__block story__block--lead">
+      <p class="eyebrow">The collective</p>
+      <p class="story__quote">We don't drop trends. We drop <span>uniforms</span> for people who never stop moving.</p>
+    </div>
+    <div class="story__block story__block--acid">
+      <p class="story__num">001</p>
+      <p class="story__k">The rule</p>
+      <p class="story__b">If it can't survive a night shift and a train platform, it doesn't ship.</p>
+    </div>
+    <div class="story__block">
+      <p class="story__k">Made</p>
+      <p class="story__b">Small batch. Numbered. Once it's gone it stays gone — the archive is the only reprint.</p>
+    </div>
+    <div class="story__block story__block--img" style="--img:url('assets/poster-acid.jpg')" data-tilt>
+      <span class="story__caption">Motion study — Drop 001</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER + FOOTER ============ -->
+<footer class="foot" id="foot">
+  <div class="foot__ticker" aria-hidden="true">
+    <div class="foot__row">
+      <span>JOIN THE COLLECTIVE</span><i>✦</i><span>FIRST ACCESS</span><i>✦</i><span>NO SPAM</span><i>✦</i>
+      <span>JOIN THE COLLECTIVE</span><i>✦</i><span>FIRST ACCESS</span><i>✦</i><span>NO SPAM</span><i>✦</i>
+      <span>JOIN THE COLLECTIVE</span><i>✦</i><span>FIRST ACCESS</span><i>✦</i><span>NO SPAM</span><i>✦</i>
+    </div>
+  </div>
+
+  <div class="foot__main">
+    <div class="foot__sign">
+      <h2 class="foot__big">BRUTAL<br>MOTION</h2>
+      <form class="signup" id="signupForm" novalidate>
+        <label class="sr-only" for="signupEmail">Email address</label>
+        <div class="signup__wrap">
+          <input id="signupEmail" name="email" type="email" inputmode="email" placeholder="you@domain.com" autocomplete="email" required />
+          <button type="submit">Join</button>
+        </div>
+        <p class="signup__msg" id="signupMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="foot__cols">
+      <div>
+        <p class="foot__k">Shop</p>
+        <a href="#drop">Drop 001</a><a href="#lookbook">Lookbook</a><a href="#bento">The index</a>
+      </div>
+      <div>
+        <p class="foot__k">Collective</p>
+        <a href="#story">Manifesto</a><a href="#foot">Membership</a><a href="#foot">Archive</a>
+      </div>
+      <div>
+        <p class="foot__k">Reach</p>
+        <a href="#foot">Instagram</a><a href="#foot">TikTok</a><a href="#foot">support@brutalmotion.xyz</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot__base">
+    <p>© 2026 BRUTAL_MOTION — a fictional collective built for a design demo.</p>
+    <p class="foot__mono">Built heavy · Cut clean · No restocks</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Your cart" aria-hidden="true">
+  <div class="drawer__scrim" data-close></div>
+  <aside class="drawer__panel">
+    <div class="drawer__top">
+      <h2 class="drawer__title">Your cart</h2>
+      <button class="drawer__x" data-close aria-label="Close cart">Close</button>
+    </div>
+    <ul class="drawer__items" id="drawerItems"></ul>
+    <p class="drawer__empty" id="drawerEmpty">Empty. The drop won't wait.</p>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><b id="drawerTotal">$0</b></div>
+      <button class="drawer__checkout" id="checkout">Checkout</button>
+      <p class="drawer__note">Demo checkout — nothing is charged.</p>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
